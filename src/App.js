@@ -1,63 +1,27 @@
-import React, { useEffect, useState } from 'react';
-// import Loading from './components/Loading';
-import SearchForm from './components/SearchForm';
-import SearchResults from './components/SearchResults';
-import SearchHeader from './SearchHeader';
+import React from 'react';
+// import ReactDom from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './index.css';
+import Nav from './Nav';
+import Home from './Home';
+import Detail from './Detail';
 
-
+// create a function to hold app components
 function App() {
-  const searchOptions = {
-    limit: 25, 
-    api: 'https://www.breakingbadapi.com/api/',
-    endpoint: '/characters'
-  };
-
-  const [images, setImages] = useState([]);
-
-  const [searchString, setSearchString] = useState('search');
-
-  const [lastSearch, setLastSearch] = useState('');
-
-  useEffect(() => {
-    getImages(searchString);
-    // eslint-disable-next-line
-  }, []);
-
-  function handleChange(event) {
-    setSearchString(event.target.value)
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    getImages(searchString);
-  }
-
-  function getImages() {
-    const searchString = 'Breaking Bad'
-    const url = `${searchOptions.api}${searchOptions.endpoint}?api_key=${searchOptions.key}&q=${searchString}&limit=${searchOptions.limit}&offset=${searchOptions.offset}&rating=${searchOptions.rating}&lang=en`;
-    
-    fetch(url)
-    .then(response => response.json())
-    .then(response => {
-      setImages(response.data)
-      setLastSearch(searchString);
-      setSearchString('');
-    })
-    .catch(console.error);
-  }
-
   return (
-    <div>
-      {/* <Loading /> */}
-      <SearchHeader lastSearch={ lastSearch } />
-      <SearchForm 
-      handleChange={handleChange}
-      handleSubmit={handleSubmit}
-      searchString={searchString}
-      />
-      <SearchResults images={images}/>
-
-    </div>
+    // create route to navigate between home and details
+    <Router>
+      <div className='App'>
+        <Nav />
+        <div>
+          <Switch>
+            <Route path='/Home' exact component={Home}/>
+            <Route path='/Home' exact component={Home}/>
+            <Route path='/Home/:id' component={Detail} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 
