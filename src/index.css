@@ -1,41 +1,51 @@
-.App {
+ .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: green;
+  background-color: rgb(50, 155, 50);
+  border: black solid 6px;
 }
 
-/* h1 p {
-  color: #ffffff;
-} */
+.brand {
+  align-items: center;
+  display: flex;
+  width: auto;
+}
 
-/* .grid-container {
-  text-align: center;
-  padding: 20px 0;
-} */
+.brand img {
+  height: 6rem;
+  margin: 0 0.5rem 0 0;
+  width: auto;
+}
 
-/* .ul-items {
-  display: grid;
-  grid: 100px / auto auto;
-  grid-gap: 10px;
-  padding: 20px;
-} */
+.brand h1 {
+  font-weight: 200;
+  letter-spacing: -1px;
+  margin-right: 20rem;
+  white-space: nowrap;
+}
 
-nav {
+header {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+Header {
   justify-content: space-around;
   align-items: auto;
   height: 100px;
   background: #1e1e1e;
   color: #ffffff;
-  text-align: center;
-  border: green solid 7px;
+  border: white solid 3px;
+  margin: 10px;
 }
 
-.nav-links {
-  width: 100%;
-  justify-content: space-around;
-  align-content: center;
+.link {
   list-style: none;
   color: #fff;
+  align-items: flex-start;
 }
 
 
@@ -46,18 +56,45 @@ nav {
   background-color: white;
   border-radius: 8px 8px 8px 8px;
   margin: 22px;
+  border: white solid 3px;
+  text-decoration: none;
 }
 
 .char img {
-  width: 141px;
-  height: 190px;
+  width: 125px;
+  height: 185px;
   float: left;
+  border: white solid 3px;
+  border-radius: 8px 8px 8px 8px;
 }
 
-/* .char p {
-  font-size: 30px;
+.char p {
+  font-size: 40px;
   color: black;
-  font-size: 30px;
-  padding: 52px 0px 0px 50px;
-  text-decoration: none;
-  } */
+  }
+
+  .details {
+    text-align: center;
+    color: white;
+  }
+  
+  ul.details {
+    list-style-type: none;
+  }
+
+  .char-head {
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: hover;
+  }
+
+  .detail-img {
+    max-height: 600px;
+    min-height: 600px;
+    border: white solid 3px;
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 8px;
+  }

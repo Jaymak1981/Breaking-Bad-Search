@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import './index.css';
 
 
@@ -7,7 +6,7 @@ import './index.css';
 function Detail({ match }) {
     useEffect(() => {
         fetchItem();
-        console.log(match);
+        // console.log(match);
         //eslint-disable-next-line
     }, []);
 
@@ -27,15 +26,17 @@ function Detail({ match }) {
         <div>
         {item.map(char => (
             <>
-                <img src={char.img} alt='' />
-                <h1>{char.name}</h1>
-                <h2>{char.nickname}</h2>
-                <ul>
-                    <li>Status {char.status}</li>
-                    <li>Birthday {char.birthday}</li>
-                    <li>Occupation {char.occupation}</li>
-                    <li>Portrayed by {char.portrayed}</li>
-                    <li>Seasons {char.appearance}</li>
+                <img class='detail-img' src={char.img} alt='' />
+                <div class='char-head'>
+                <h1>Name: {char.name}</h1>
+                <h2>Nickname: {char.nickname}</h2>
+                </div>
+                <ul className='details'>
+                    <li>Status: {char.status}</li>
+                    <li>Birthday: {char.birthday}</li>
+                    <li>Occupation: {char.occupation}</li>
+                    <li>Portrayed by: {char.portrayed}</li>
+                    <li>Seasons: {char.appearance}</li>
                 </ul>
             </>    
         ))}

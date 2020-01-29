@@ -19,7 +19,7 @@ function Home() {
     };
 
     return (
-        <div class='grid-container'>
+        <div className='wrapper'>
             <ul>
                 {items.map(item => (
                     <Link to={`/Home/${item.char_id}`}>

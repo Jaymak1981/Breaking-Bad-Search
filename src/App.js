@@ -1,8 +1,7 @@
 import React from 'react';
-// import ReactDom from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './index.css';
-import Nav from './Nav';
+import Header from './Header';
 import Home from './Home';
 import Detail from './Detail';
 
@@ -12,7 +11,7 @@ function App() {
     // create route to navigate between home and details
     <Router>
       <div className='App'>
-        <Nav />
+        <Header />
         <div>
           <Switch>
             <Route path='/Home' exact component={Home}/>
