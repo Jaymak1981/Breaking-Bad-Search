@@ -19,7 +19,7 @@ function Detail({ match }) {
         // console.log(item);
         setItem(item);
     };
-// async/await worked!!!
+//  got this async/await idea online and wanted to try it out, can't remember the name of the developer to give credit to 
     
 // return character image and details
     return (
@@ -45,4 +45,4 @@ function Detail({ match }) {
 }
 
 
-export default Detail
+export default Detail;
