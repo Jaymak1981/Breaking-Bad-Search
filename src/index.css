@@ -34,7 +34,6 @@ header {
 
 Header {
   justify-content: space-around;
-  align-items: auto;
   height: 100px;
   background: #1e1e1e;
   color: #ffffff;
@@ -88,7 +87,7 @@ Header {
 
   a {
     text-decoration: none;
-    cursor: hover;
+    cursor: pointer;
   }
 
   .detail-img {
