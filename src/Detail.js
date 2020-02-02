@@ -26,8 +26,8 @@ function Detail({ match }) {
         <div>
         {item.map(char => (
             <>
-                <img class='detail-img' src={char.img} alt='' />
-                <div class='char-head'>
+                <img className='detail-img' src={char.img} alt='' />
+                <div className='char-head'>
                 <h1>Name: {char.name}</h1>
                 <h2>Nickname: {char.nickname}</h2>
                 </div>
