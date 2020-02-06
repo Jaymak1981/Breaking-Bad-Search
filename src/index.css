@@ -1,99 +1,102 @@
  .App {
-  font-family: sans-serif;
-  text-align: center;
-  background-color: rgb(50, 155, 50);
-  border: black solid 6px;
-}
+   font-family: sans-serif;
+   text-align: center;
+   background-color: rgb(50, 155, 50);
+   border: black solid 6px;
+ }
 
-.brand {
-  align-items: center;
-  display: flex;
-  width: auto;
-}
+ .brand {
+   align-items: center;
+   display: flex;
+   width: auto;
+ }
 
-.brand img {
-  height: 8rem;
-  margin: 0 0.5rem 0 0;
-  width: auto;
-}
+ .brand img {
+   height: 8rem;
+   margin: 0 0.5rem 0 0;
+   width: auto;
+ }
 
-.brand h1 {
-  font-weight: 200;
-  letter-spacing: -1px;
-  margin-right: 20rem;
-  white-space: nowrap;
-}
+ .brand h1 {
+   font-weight: 200;
+   letter-spacing: -1px;
+   margin-right: 20rem;
+   white-space: nowrap;
+ }
 
-header {
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
+ header {
+   font-size: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 1rem 0;
+ }
 
-Header {
-  justify-content: space-around;
-  height: 100px;
-  background: #1e1e1e;
-  color: #ffffff;
-  border: white solid 3px;
-  margin: 10px;
-}
+ /* JM: What component does this correlate to? Looks like you have the styles setup in the head tag above. */
+ Header {
+   justify-content: space-around;
+   height: 100px;
+   background: #1e1e1e;
+   color: #ffffff;
+   border: white solid 3px;
+   margin: 10px;
+ }
 
-.link {
-  list-style: none;
-  color: #fff;
-  align-items: flex-start;
-}
+ .link {
+   list-style: none;
+   color: #fff;
+   align-items: flex-start;
+ }
 
 
-.char {
-  width: 468px;
-  height: 190px;
-  list-style: none;
-  background-color: white;
-  border-radius: 8px 8px 8px 8px;
-  margin: 22px;
-  border: white solid 3px;
-  text-decoration: none;
-}
+ .char {
+   width: 468px;
+   height: 190px;
+   list-style: none;
+   background-color: white;
+   border-radius: 8px 8px 8px 8px;
+   margin: 22px;
+   border: white solid 3px;
+   text-decoration: none;
+   /* Displays a little better for desktop and creates two column with your flex container */
+   display: inline-block;
+ }
 
-.char img {
-  width: 125px;
-  height: 185px;
-  float: left;
-  border: white solid 3px;
-  border-radius: 8px 8px 8px 8px;
-}
+ .char img {
+   width: 125px;
+   height: 185px;
+   float: left;
+   border: white solid 3px;
+   border-radius: 8px 8px 8px 8px;
+ }
 
-.char p {
-  font-size: 40px;
-  color: black;
-  }
+ .char p {
+   font-size: 40px;
+   color: black;
+ }
 
-  .details {
-    text-align: center;
-    color: white;
-  }
-  
-  ul.details {
-    list-style-type: none;
-  }
+ .details {
+   text-align: center;
+   color: white;
+ }
 
-  .char-head {
-    color: white;
-  }
+ ul.details {
+   list-style-type: none;
+ }
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
-  }
+ .char-head {
+   color: white;
+ }
 
-  .detail-img {
-    max-height: 600px;
-    min-height: 600px;
-    border: white solid 3px;
-    border-radius: 8px 8px 8px 8px;
-    margin-top: 8px;
-  }
+ a {
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ .detail-img {
+   max-height: 600px;
+   min-height: 600px;
+   border: white solid 3px;
+   border-radius: 8px 8px 8px 8px;
+   margin-top: 8px;
+ }
