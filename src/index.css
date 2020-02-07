@@ -33,7 +33,7 @@ header {
 }
 
 Header {
-  /* justify-content: space-around; */
+  justify-content: space-around;
   height: 100px;
   background: #1e1e1e;
   color: #ffffff;
