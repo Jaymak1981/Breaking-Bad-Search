@@ -4,6 +4,7 @@ import './index.css';
 import Header from './Header';
 import Home from './Home';
 import Detail from './Detail';
+import Footer from './Footer';
 
 // create a function to hold app components
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path='/Home' exact component={Home}/>
             <Route path='/Home/:id' component={Detail} />
           </Switch>
+          <Footer className="footer"/>
         </div>
       </div>
     </Router>
